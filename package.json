@@ -7,8 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "node --watch --env-file=.env -r ts-node/register src/index.ts",
-    "prestart": "npm run build"
+    "dev": "ts-node-dev --respawn --env-file=.env src/index.ts",
+    "prestart": "npm run build",
+    "migrate": "npx prisma migrate deploy"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +28,7 @@
     "@types/swagger-jsdoc": "^6.0.4",
     "@types/swagger-ui-express": "^4.1.8",
     "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.8.3"
   }
 }
