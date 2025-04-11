@@ -11,10 +11,15 @@ const options: swaggerJsdoc.Options = {
       description: "API documentation for the Post-it social media app",
     },
     servers: [
-      {
-        url: "http://localhost:3000",
-        description: "Local development server",
-      },
+        {
+            url: "{protocol}://{host}",
+            description: "Current server",
+            variables: {
+              protocol: { default: "https" },
+              host: { default: "https://post-it-app-cwv0.onrender.com/" },
+            },
+          },
+          { url: "http://localhost:3000", description: "Local development server" },
     ],
   },
   apis: ["./src/controllers/*.ts"], // Point to your controller files
