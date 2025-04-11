@@ -16,7 +16,7 @@ const options: swaggerJsdoc.Options = {
             description: "Current server",
             variables: {
               protocol: { default: "https" },
-              host: { default: "https://post-it-app-cwv0.onrender.com/" },
+              host: { default: "post-it-app-cwv0.onrender.com/" },
             },
           },
           { url: "http://localhost:3000", description: "Local development server" },
