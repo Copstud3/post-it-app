@@ -26,7 +26,7 @@ A simple social media API built with Node.js, TypeScript, Express, and Prisma. F
 
 ## API Documentation
 
-Explore the API at `http://localhost:3000/api-docs` after starting the server.
+Explore the API at `http://localhost:3000/api/v1/docs` after starting the server.
 
 ## Workflow
 - New features/fixes: Create a `feature/<name>` branch from `develop`.
