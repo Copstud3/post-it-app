@@ -20,6 +20,10 @@ A simple social media API built with Node.js, TypeScript, Express, and Prisma. F
 - `main`: Production-ready code (merged from `develop` via PR).
 - `develop`: Development integration (merged from feature branches via PR).
 
+## Database Design
+- **ERD**: [View Diagram](docs/post-itapp-dbmodel.png)
+- **Interactive Diagram**: [dbdiagram.io Link](https://dbdiagram.io/d/post-itapp-dbmodel-67f914544f7afba18440b523)
+
 ## API Documentation
 
 Explore the API at `http://localhost:3000/api-docs` after starting the server.
