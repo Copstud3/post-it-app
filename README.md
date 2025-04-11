@@ -12,7 +12,7 @@ A simple social media API built with Node.js, TypeScript, Express, and Prisma. F
 
 1. Clone the repo: `git clone https://github.com/copstud3/post-it-app.git`
 2. Install dependencies: `npm install`
-3. Set up environment: Setup `.env` and configure your PostgreSQL database.
+3. Set up environment: Setup `.env` using `.env.example` and configure your PostgreSQL database.
 4. Run migrations: `npx prisma migrate dev`
 5. Start the server: `npm start`
 
