@@ -28,6 +28,12 @@ Explore the API at `http://localhost:3000/api-docs` after starting the server.
 - New features/fixes: Create a `feature/<name>` branch from `develop`.
 - PR to `develop`, then `develop` to `main` after review.
 
+## Version Control
+- **main**: Production branch; merged from `develop` via PR.
+- **develop**: Development branch; merged from feature branches via PR.
+- **Feature Branches**: Create `feature/<name>` from `develop` for new work.
+- **Commit Messages**: Use `feat:`, `fix:`, `docs:`, etc.
+
 ## Tech Stack
 
 - Node.js
@@ -35,3 +41,4 @@ Explore the API at `http://localhost:3000/api-docs` after starting the server.
 - Express
 - Prisma (PostgreSQL)
 - Swagger (OpenAPI)
+
