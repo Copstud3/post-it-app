@@ -1,6 +1,7 @@
 # Post-it App
 
 A simple social media API built with Node.js, TypeScript, Express, and Prisma. Features include user management, posts, and comments with soft-delete functionality.
+It was containerized using Docker for consistent development and deployment.
 
 ## Features
 
@@ -9,12 +10,27 @@ A simple social media API built with Node.js, TypeScript, Express, and Prisma. F
 - Swagger API documentation at `/api-docs`
 
 ## Setup
+This project uses Docker containers for both the application and PostgreSQL database. Follow these steps to get started locally:
 
 1. Clone the repo: `git clone https://github.com/copstud3/post-it-app.git`
-2. Install dependencies: `npm install`
+2. Install dependencies:
+   ```
+   npm install
+   ```
 3. Set up environment: Setup `.env` using `.env.example` and configure your PostgreSQL database.
-4. Run migrations: `npx prisma migrate dev`
-5. Start the server: `npm start`
+4. Run Docker Compose: Starts the app and database in containers.
+   ```
+   docker-compose up --build
+   ```
+5. Apply migrations: In a new terminal, run:
+   ```
+   docker-compose exec app npx prisma migrate dev
+   ```
+6. Access the app: Visit `http://localhost:3000` and Swagger docs at `http://localhost:3000/api/v1/docs`.
+
+For local development without Docker, use npm run dev after setting up a local PostgreSQL instance.
+
+
 
 ## Branches
 - `main`: Production-ready code (merged from `develop` via PR).
@@ -45,4 +61,3 @@ Explore the API at `http://localhost:3000/api/v1/docs` after starting the server
 - Express
 - Prisma (PostgreSQL)
 - Swagger (OpenAPI)
-
