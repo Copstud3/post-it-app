@@ -61,4 +61,3 @@ Explore the API at `http://localhost:3000/api/v1/docs` after starting the server
 - Express
 - Prisma (PostgreSQL)
 - Swagger (OpenAPI)
-
